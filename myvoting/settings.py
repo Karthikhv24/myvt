@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Trust OpenShift Git route for CSRF protection
+CSRF_TRUSTED_ORIGINS = [
+    "https://myvt-git-karthik-h-v-dev.apps.rm1.0a51.p1.openshiftapps.com",
+]
+
 
 # Application definition
 
